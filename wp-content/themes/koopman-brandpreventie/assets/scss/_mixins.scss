@@ -1,0 +1,50 @@
+@mixin display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-direction($direction) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin align-items($align) {
+    -webkit-box-align: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}
+
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+
+@mixin box-shadow($s) {
+    -webkit-box-shadow: $s;
+    box-shadow: $s;
+}
+
+@mixin transition($x...) {
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}
+
+@mixin order($o) {
+    -webkit-box-ordinal-group: $o;
+    -ms-flex-order: $o;
+    order: $o;
+}
+
+@mixin flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
