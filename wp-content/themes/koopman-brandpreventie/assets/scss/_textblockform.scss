@@ -1,0 +1,1 @@
+.section.textblock--form {    .column {        &.left {            @include order(-1);            @include media(tablet) {                @include order(1);            }        }        @include media(tablet) {            min-width: calc(100% - (17.5px * 2));            max-width: calc(100% - (17.5px * 2));        }    }}

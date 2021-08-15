@@ -73,8 +73,14 @@ function my_acf_op_init() {
             'menu_title'    => __('Logo voor in de menus'),
             'menu_slug'     => 'logo-general-settings',
             'capability'    => 'edit_posts',
-            'redirect'      => false
         ]);
+
+        $option_page = acf_add_options_page([
+            'page_title'    => __('Contact gegevens in de menus'),
+            'menu_title'    => __('Contact gegevens in de menus'),
+            'menu_slug'     => 'footer-general-settings',
+            'capability'    => 'edit_posts',
+        ]);
+
     }
 }
-

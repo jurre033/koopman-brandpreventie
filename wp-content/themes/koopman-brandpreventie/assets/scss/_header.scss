@@ -1,17 +1,17 @@
 nav.menu {
     background: #fff;
-    padding: 0 20px;
+    padding: 0 5%;
     max-height: 120px;
-    width: calc(100% - (20px * 2));
+    width: calc(100% - (5% * 2));
     position: fixed;
     top: 0;
-    z-index: 9999999;
+    z-index: 9999;
     @include transition(.3s ease);
     @include display-flex;
     @include align-items(center);
 
     &.scrolled {
-        @include box-shadow(0px 1px 20px #999);
+        @include box-shadow(0px 1px 15px #8c8c8c);
     }
 
     .menu-header-container {
@@ -22,6 +22,7 @@ nav.menu {
     img {
         width: 100%;
         height: auto;
+        min-width: 160px;
         max-width: 240px;
     }
 
@@ -39,12 +40,10 @@ nav.menu {
             list-style: none;
             padding: 0 20px;
             cursor: pointer;
-            @include transition(.4s ease);
 
             a {
                 @include transition(.4s ease);
                 text-decoration: none;
-                color: $text-color;
                 font-weight: 700;
                 display: inline-block;
                 padding: 5px 15px;
@@ -52,8 +51,8 @@ nav.menu {
                 cursor: pointer;
 
                 &:hover {
-                    @include box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.26));
-                    background: $red-mid;
+                    @include box-shadow($box-shadow);
+                    background: $main;
                     color: #fff;
                 }
             }
