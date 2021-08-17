@@ -32,10 +32,23 @@
             <a class="logo" href="<?= home_url(); ?>">
                 <?php $image = get_field('logo', 'options');
                 if ($image) : ?>
-                    <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>" />
+                    <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>"/>
                 <?php endif; ?>
             </a>
-            <?php wp_nav_menu(array('theme_location' => 'header-menu', 'depth' => 1)); ?>
+            <?php wp_nav_menu(['theme_location' => 'header-menu', 'depth' => 1]); ?>
+        </nav>
+    </header>
+
+    <header id="masthead-responsive" class="hidden">
+        <a class="logo" href="<?= home_url(); ?>">
+            <?php $image = get_field('logo', 'options');
+            if ($image) : ?>
+                <img src="<?= esc_url($image['url']) ?>" alt="<?= esc_attr($image['alt']) ?>"/>
+            <?php endif; ?>
+        </a>
+        <div class="burger"><span class="icon"></span></div>
+        <nav class="menu" aria-hidden="true">
+            <?php wp_nav_menu(['theme_location' => 'header-menu', 'depth' => 1]); ?>
         </nav>
     </header>
 

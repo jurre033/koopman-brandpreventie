@@ -8,6 +8,10 @@
         @include flex-wrap;
         padding: 0 5%;
         width: calc(100% - (5% * 2));
+        @include media(phone) {
+            padding: 0 10px;
+            width: calc(100% - (10px * 2));
+        }
     }
 
     .column {
@@ -16,8 +20,9 @@
             max-width: calc(50% - (17.5px * 2));
         }
         @include media(phone) {
-            min-width: calc(100% - (17.5px * 2));
-            max-width: calc(100% - (17.5px * 2));
+            margin: 17.5px 0;
+            min-width: 100%;
+            max-width: 100%;
         }
     }
 
@@ -38,6 +43,7 @@
         width: 100%;
         height: auto;
         max-width: 240px;
+        padding: 10px 20px;
     }
 
     ul {
@@ -45,12 +51,19 @@
         height: 100%;
         padding: 0;
         margin: 0;
+        @include media(phone){
+            @include display-flex;
+            @include flex-direction(column);
+        }
 
         li {
             width: 100%;
             list-style: none;
             padding: 10px 20px;
             display: inline-block;
+            @include media(phone){
+                width: auto;
+            }
 
             a {
                 cursor: pointer;

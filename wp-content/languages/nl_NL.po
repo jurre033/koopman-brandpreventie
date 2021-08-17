@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-03 22:42:00+0000\n"
+"PO-Revision-Date: 2021-08-15 16:39:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10539,7 +10539,7 @@ msgid "Home"
 msgstr "Home"
 
 #: wp-includes/customize/class-wp-customize-new-menu-control.php:59
-#: wp-admin/nav-menus.php:961 wp-admin/nav-menus.php:1118
+#: wp-admin/nav-menus.php:961 wp-admin/nav-menus.php:1126
 msgid "Create Menu"
 msgstr "Menu aanmaken"
 
@@ -10587,7 +10587,7 @@ msgid "Navigation Label"
 msgstr "Navigatielabel"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-auto-add-control.php:46
-#: wp-admin/nav-menus.php:1045
+#: wp-admin/nav-menus.php:1053
 msgid "Automatically add new top-level pages to this menu"
 msgstr "Automatisch hoofdniveau pagina's aan dit menu toevoegen"
 
@@ -10597,7 +10597,7 @@ msgid "Menu Location"
 msgstr "Menu locatie"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1105
-#: wp-admin/nav-menus.php:1112
+#: wp-admin/nav-menus.php:1120
 msgid "Delete Menu"
 msgstr "Menu verwijderen"
 
@@ -14435,7 +14435,7 @@ msgstr "Als je dit domein niet gaat gebruiken, gun het een nieuwe gebruiker. Nu 
 
 #: wp-signup.php:365
 msgid "Sites you are already a member of:"
-msgstr "Sites waar je al deelnemer van bent: "
+msgstr "Sites waar je al lid van bent:"
 
 #. translators: %s: Network title.
 #: wp-signup.php:344
@@ -17110,7 +17110,7 @@ msgstr "Inhoud"
 #: wp-admin/includes/media.php:1744 wp-admin/includes/media.php:2279
 #: wp-admin/includes/meta-boxes.php:155 wp-admin/includes/meta-boxes.php:208
 #: wp-admin/includes/template.php:498 wp-admin/includes/template.php:741
-#: wp-admin/includes/template.php:862 wp-admin/nav-menus.php:1093
+#: wp-admin/includes/template.php:862 wp-admin/nav-menus.php:1101
 #: wp-admin/options-general.php:129 wp-admin/user-edit.php:531
 #: wp-admin/user-edit.php:645 wp-admin/widgets-form.php:337
 #: wp-admin/widgets-form.php:340 wp-admin/widgets-form.php:553
